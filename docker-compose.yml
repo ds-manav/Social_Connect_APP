@@ -11,10 +11,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgre
   solr:
-    container_name: test.solr
-    build: 
-      context: .
-      dockerfile: ./Dockerfile
+    image: solr:8.7.0
     ports:
      - "8983:8983"
     volumes:
