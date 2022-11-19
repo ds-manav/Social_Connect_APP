@@ -6,6 +6,6 @@ RUN  npm install -g npm@9.1.2
 RUN npm i --legacy-peer-deps
 COPY ./social_connect_app_frontend ./usr/src/app
 EXPOSE 3000
-# RUN chown -R node /usr/src/app
+RUN npm i react-scripts
 USER node
 CMD ["npm","run","start"]
