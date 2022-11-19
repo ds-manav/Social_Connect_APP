@@ -34,16 +34,11 @@ function Feed(props) {
 
   return (
     <div className="feed">
-<<<<<<< HEAD
       <FeedBox/>
       {listposts ?
       <div>
       { 
       listposts.map((post) => (
-=======
-      <FeedBox  userid={data.id}  username={data.username} email={data.email}/>
-      {listposts.map((post) => (
->>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
         <div key = {post.id}>
         <Post
           key={post.id}
@@ -54,7 +49,6 @@ function Feed(props) {
 
         />
         </div>
-<<<<<<< HEAD
 
       ))}
       </div>
@@ -62,9 +56,6 @@ function Feed(props) {
       <div>
       <h1>Create a Post</h1>
       </div>}
-=======
-      ))}
->>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
     </div>
   );
 }
