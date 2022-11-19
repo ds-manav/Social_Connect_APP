@@ -39,22 +39,16 @@ const NavBar =()=> {
   }
 const navigate = useNavigate();
   const handleLogout =()=>{
-<<<<<<< HEAD
     if(userdata){
-=======
->>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
         localStorage.clear();
         navigate('/')
         window.location.reload(true);
   }
-<<<<<<< HEAD
   else{
     navigate('/')
   }
 
 }
-=======
->>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
 
 
 
@@ -83,13 +77,9 @@ const navigate = useNavigate();
       </div>
       <div className="qHeader__icons">
         <div className="active qHeader__icon">
-<<<<<<< HEAD
           <HomeIcon onClick={()=>{
             navigate("/")
           }} />
-=======
-          <HomeIcon />
->>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
         </div>
         <div className="qHeader__icon">
           <FeaturedPlayListOutlinedIcon />
@@ -124,11 +114,7 @@ const navigate = useNavigate();
           />
         </div>
         
-<<<<<<< HEAD
         <Button onClick={handleLogout}>LogIn/LogOut</Button>
-=======
-        <Button onClick={handleLogout}>Log Out</Button>
->>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
        
         <Button onClick={() => setIsModalOpen(true)}>Add Post</Button>
         <Modal

@@ -19,11 +19,8 @@ const Post = (props) => {
   const [IsmodalOpen, setIsModalOpen] = useState(false);
   const postid = props.postid
   const username = props.username;
-<<<<<<< HEAD
   const [loadComments,setLoadComments] = useState(false);
   const [like,setLike] = useState(0);
-=======
->>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
 
   //   for c, i in session.query(Customer, Invoice).filter(Customer.id == Invoice.custid).all():
   //  print ("ID: {} Name: {} Invoice No: {} Amount: {}".format(c.id,c.name, i.invno, i.amount))
@@ -55,14 +52,10 @@ const Post = (props) => {
             Comment
           </button>
           <div style={{marginTop:"10px"}}>
-<<<<<<< HEAD
             { loadComments ?
           <LoadComments postid={postid}/>
           :
           <></>}
-=======
-          <LoadComments postid={postid}/>
->>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
           </div> 
         </div>
         
@@ -72,7 +65,6 @@ const Post = (props) => {
       </div>
       <div className="post__footer">
         <div className="post__footerAction">
-<<<<<<< HEAD
           <ArrowUpwardOutlinedIcon onClick={()=>{
             setLike(like+1);
           }} />
@@ -86,14 +78,6 @@ const Post = (props) => {
         <ChatBubbleOutlineOutlinedIcon onClick={()=>{
           setLoadComments(currentState => !currentState);
         }} />
-=======
-          <ArrowUpwardOutlinedIcon />
-          <ArrowDownwardOutlinedIcon />
-        </div>
-
-        <RepeatOutlinedIcon />
-        <ChatBubbleOutlineOutlinedIcon />
->>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
         <div className="post__footerLeft">
           <ShareOutlined />
           <MoreHorizOutlined />
