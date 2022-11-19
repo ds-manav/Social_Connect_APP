@@ -54,7 +54,11 @@ const Login = ({props,route,navigation})=>{
             <div className="login">
                 <button id = "loginbtn" onClick={handleLogin}>Login</button>
                 <button id = "loginbtn" onClick={()=>{
+<<<<<<< HEAD
                     navigate('/register')
+=======
+                    
+>>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
                 }}>SignUp</button>
             </div>
             </div>

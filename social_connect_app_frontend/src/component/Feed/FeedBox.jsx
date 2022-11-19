@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { postActions } from "../../store/PostFeedSlice";
 import "./FeedBox.style.css";
 
+<<<<<<< HEAD
 export default function FeedBox() {
    const postdetails = useSelector((state)=>state.post.postdata);
    const dispatch = useDispatch();
@@ -20,6 +21,21 @@ export default function FeedBox() {
         await dispatch(postActions.setPostId(randomNumberInRange(1,100)));
         await dispatch(postActions.setPostUsername(data.username));
         await dispatch(postActions.setPostUserId(data.id));
+=======
+export default function FeedBox(props) {
+   const postdetails = useSelector((state)=>state.post.postdata);
+   console.log(props.userid);
+   const dispatch = useDispatch();
+   const randomNumberInRange=(min, max)=> {
+    return Math.round(Math.random() * (max - min + 1)) + min;
+  }
+
+   async function handlePosts() {
+    try {
+        await dispatch(postActions.setPostId(randomNumberInRange(1,100)));
+        await dispatch(postActions.setPostUsername(props.username));
+        await dispatch(postActions.setPostUserId(props.userid));
+>>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
       const posturl = `http://localhost:8000/api/posts/`;
       const postdata = await axios.post(posturl,postdetails).then(response => {
 
@@ -29,17 +45,24 @@ export default function FeedBox() {
     }
     catch (e) {
       console.log(e);
+<<<<<<< HEAD
     }}
     else {
       alert("Please Login Before ");
+=======
+>>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
     }
 }
 
 
    
   return (
+<<<<<<< HEAD
     <div>{ data ?    
       <div className="feedBox">
+=======
+    <div className="feedBox">
+>>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
       <div className="feedBox__info">
         <Avatar
           src={
@@ -47,7 +70,11 @@ export default function FeedBox() {
           }
           className="feedBox__infoAvatar"
         />
+<<<<<<< HEAD
         <h3 style={{fontFamily:"inherit"}}>{data.username ? data.username : ""}</h3>
+=======
+        <h3 style={{fontFamily:"inherit"}}>{props.username ? props.username : props.email}</h3>
+>>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
       </div>
       <div className="feedBox__quora">
         < textarea value ={postdetails.feed} placeholder={"post something you feel,think .........."} onChange={(e)=>{
@@ -56,6 +83,7 @@ export default function FeedBox() {
         <button onClick={handlePosts}>Post</button>
         
       </div>
+<<<<<<< HEAD
     </div> :
     <div className="feedBox">
     <div className="feedBox__info">
@@ -78,5 +106,8 @@ export default function FeedBox() {
     }
     </div>
 
+=======
+    </div>
+>>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
   );
 }

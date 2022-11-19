@@ -105,14 +105,22 @@
   }
   .post__footerAction > .MuiSvgIcon-root {
     color: gray;
+<<<<<<< HEAD
     margin-right: 8px;
     margin-right: 5px;
+=======
+    margin-right: 40px;
+>>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
     cursor: pointer;
   }
   
   .post__footerAction > .MuiSvgIcon-root:hover {
     color: rgb(0, 140, 255);
+<<<<<<< HEAD
     margin-right: 20px;
+=======
+    margin-right: 40px;
+>>>>>>> c78474f3f2a48d2113b9eb382d76a3da442e4b7d
   }
   
   .post__footerLeft {
