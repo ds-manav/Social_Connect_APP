@@ -8,6 +8,10 @@ You just need to pull this code from github into you local machine
 And then you just need to execute this comment in a docker client on top of docker daemaon
 Remember to install Docekr before running this file
 
+
+****IMP***
+PLEASE ACCEPT ALL THE CURRENT CHANGES IN SOCIAL_CONNECT_APP_FRONTEND TO RESOLVE ALL THE COMMIT
+
 COMMANDS:
 docker-compose up -d --build
 
