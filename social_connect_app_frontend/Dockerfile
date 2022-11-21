@@ -7,6 +7,10 @@ RUN npm i --legacy-peer-deps
 COPY ./social_connect_app_frontend ./usr/src/app
 EXPOSE 3000
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+RUN npm i react-scripts
+>>>>>>> 512f1abf365dab249ff4200ba3844652265c45c4
 =======
 RUN npm i react-scripts
 >>>>>>> 512f1abf365dab249ff4200ba3844652265c45c4
