@@ -1,8 +1,8 @@
 EXECUTE THE BELOW COMMANDS AFTER PULLING/CLONING ONE BY ONE TO START THE APPLICATION.
 COMMANDS:
-cd social_connect_app_frontend
-npm i react-scripts --legacy-peer-deps
-docker-compose up -d --build
+1)  cd social_connect_app_frontend           ................................................................................................................................
+2) npm i react-scripts --legacy-peer-deps ..............................................................................................................................
+3) docker-compose up -d --build  .........................................................................................................................................
 
 
 This Command will execute your docker-compose and the Dockerfiles which in turn build the applications for you.
